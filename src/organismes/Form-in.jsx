@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import ButtoninX from "../atoms/Button.in";
 import ButtoncrX from "../atoms/Button.cr";
 import logo from "../assets/logo.png";
-import '../organismes/Form-in.css'
+import "../organismes/Form-in.css";
 
 const ForminX = () => {
   const [email, setEmail] = useState("");
@@ -21,36 +21,42 @@ const ForminX = () => {
     e.preventDefault();
     console.log("Email:", email);
     console.log("Password:", password);
-  };    
+  };
 
   return (
     <div>
       <Card className="container">
         <Card className="second">
           <Card className="cdf">
-            <h1 className="tittle">Iniciar sesión en CampusLink</h1>
-            <img src={logo.png} className="logo"/>
-            <form onSubmit={handleSubmit}>
-              <label className="email">Email:</label>
-              <input
-                className="in-pass"
-                type="email"
-                id="email"
-                value={email}
-                onChange={handleEmailChange}
-              />
-              <br />
-              <label className="password">Password:</label>
-              <input
-                className="c-in"
-                type="password"
-                id="password"
-                value={password}
-                onChange={handlePasswordChange}
-              />
-              <br />
-              <ButtoncrX />
-            </form>
+            <h1 className="tittle">Iniciar sesión</h1>
+            <div className="box-img">
+              <img src={logo} className="logo" />
+            </div>
+
+       
+              <form onSubmit={handleSubmit}>
+                <label className="email">Email:</label>
+                <input
+                  className="in-pass"
+                  type="email"
+                  id="email"
+                  value={email}
+                  onChange={handleEmailChange}
+                />
+                <br />
+                <label className="password">Password:</label>
+                <input
+                  className="c-in"
+                  type="password"
+                  id="password"
+                  value={password}
+                  onChange={handlePasswordChange}
+                />
+                <br />
+                <ButtoncrX />
+              </form>
+  
+
             <ButtoninX />
           </Card>
         </Card>

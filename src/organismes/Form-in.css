@@ -24,8 +24,14 @@
 }
 
 .logo {
-  position: absolute;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+
   height: 100px;
+
 }
 
 .e-m {
@@ -37,25 +43,15 @@
 
 .c-in {
   position: absolute;
-  width: 377px;
-  height: 67px;
-  left: 35px;
+  width: 37px;
+  height: 40px;
+  left: 0px;
   top: 350px;
   background: #acacac;
   border-radius: 15px;
 }
 
-.input {
-  width: 377px;
-  height: 67px;
-}
 
-input {
-  border: none;
-  background-color: transparent;
-  outline: none;
-  color: black;
-}
 
 .cdf {
   position: absolute;
@@ -68,10 +64,11 @@ input {
 }
 
 .in-pass {
+  display: flex;
   position: absolute;
-  width: 377px;
-  height: 67px;
-  left: 35px;
+  width: 37px;
+  height: 40px;
+  left: 0px;
   top: 250px;
   border-radius: 15px;
 
@@ -79,19 +76,22 @@ input {
 }
 
 .passin {
+  position: absolute;
   border: none;
   background-color: transparent;
   outline: none;
   color: black;
   width: 377px;
-  height: 67px;
+  height: 6123px;
 }
 
 .tittle {
   color: black;
   font-size: xx-large;
-  position: absolute;
+ justify-content: center;
+  display: flex;
   left: 10px;
+
 }
 
 .password {
@@ -139,7 +139,7 @@ input {
   position: absolute;
   width: 556px;
   height: 590px;
-  left: 400px;
+  left: 20px;
   top: 20px;
   background: #0554f2;
   border-radius: 30px;
@@ -173,15 +173,50 @@ input{
   background-color: #acacac;
   outline: none;
   color: black;
+  height: 20%;
 }
 
 .btn {
-  display: block;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
   padding: 10px 20px;
   background-color: black;
   color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 0px;
   cursor: pointer;
+
+}
+
+
+.box-logo{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.box-btn{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.box-form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.box-img{
+  position: absolute;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-end;
+  top: 100px;
+  left: 50px;
 }
